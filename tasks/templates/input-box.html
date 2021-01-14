@@ -1,4 +1,5 @@
 <form class="add-todo">
-    <input class="add-todo--input" type="text">
+    {% csrf_token %}
+    {{ form.title }}
     <button class="add-todo--btn">add</button>
 </form>

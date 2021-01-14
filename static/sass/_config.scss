@@ -12,8 +12,15 @@ body{
     background-color: aliceblue;
 }
 
-$black: #0D1330;
+$black: #0000;
 $white: #e9f3f2;
+$grey: #F7FBFF;
+$red: #FF0000;
 
-$primary-color: rgba(34, 137, 255, 0.788);
-$secondary-color: coral;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&family=Roboto+Slab&display=swap');
+$primary-font-family: 'Poppins', sans-serif;
+
+$primary-color: #2694F9;
+$secondary-color: #E4B063;
+
+$border-radius: 15px;

@@ -1,4 +1,12 @@
-<section class="todo-item">
-   <button class="todo-item--complete-btn"></button>
-    <p class="todo-item--title"></p>
+<section>
+    {% for todo in todos %}
+    <div class="todo-item">
+        <button class="todo-item--complete-btn">
+            <svg id="1" width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 13C22.5 18.8923 17.9313 23.5 12.5 23.5C7.06866 23.5 2.5 18.8923 2.5 13C2.5 7.10769 7.06866 2.5 12.5 2.5C17.9313 2.5 22.5 7.10769 22.5 13Z" stroke="white" stroke-width="5"/>
+            </svg>            
+        </button>
+        <p class="todo-item--title">{{todo.title}}</p>
+    </div>
+    {% endfor %}
 </section>
